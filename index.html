@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>React JS Practice</title>
 </head>
 <body>
-    <h3>Hello World!!!</h3>
+    <h1>Hello World!!</h1>
+    <div id="div1">
+        
+    </div>
+    <div id="div2">
+        
+    </div>
+
+    <script>
+        const headingElement = document.createElement("h1");
+        headingElement.innerHTML = "Hello from normal javascript!"
+
+        const div = document.getElementById("div1");
+        div.appendChild(headingElement);
+    </script>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        const heading = React.createElement("h1",{},"Hello from React JS");
+        const root = ReactDOM.createRoot(document.getElementById("div2"));
+        root.render(heading);
+    </script>
+
+
+
 </body>
 </html>
