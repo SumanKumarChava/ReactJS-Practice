@@ -24,3 +24,8 @@
     Run commands **npm install react**, **npm install react-dom**
 16. Now add **import React** and **import React-Dom** statements in js file, to use the react package by importing.
 17. Also add, **type="module"** for <script src="./App.js">
+18. Parcel is doing **HMR = Hot Module replacement** which is like hot reload. Also gives faster builds by internal caching.
+19. Parcel also does image optimisation for prod builds.
+20. It minifies, compresses, removes unncessary code, tree shaking, consistent hashing, code splitting, diagnostics, HTTPS support, differential bundling (ability of app to run in all kinds of browsers) as well.
+21. Visit **www.parceljs.org** to read more.
+22. React is fast mainly because of this Parcel library.
