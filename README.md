@@ -35,3 +35,5 @@
     So no need to send them to git.**
 26. We can configure all the browser versions in which our app is supposed to work using "browserslist" configuration in package.json.
     Read **"www.browserslist.dev"** for more info.
+
+## Core React
