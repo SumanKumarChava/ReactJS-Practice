@@ -2,7 +2,6 @@
   "name": "reactjs-practice",
   "version": "1.0.0",
   "description": "Sample project to revise react js concepts",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },

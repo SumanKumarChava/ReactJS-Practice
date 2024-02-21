@@ -29,3 +29,5 @@
 20. It minifies, compresses, removes unncessary code, tree shaking, consistent hashing, code splitting, diagnostics, HTTPS support, differential bundling (ability of app to run in all kinds of browsers) as well.
 21. Visit **www.parceljs.org** to read more.
 22. React is fast mainly because of this Parcel library.
+23. "dist" folder is like bin and obj that we get in .net apps i.e., it contains app's build.
+24. Run **npx parcel build index.html** command to generate production builds.
