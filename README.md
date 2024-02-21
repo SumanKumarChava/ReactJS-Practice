@@ -31,3 +31,7 @@
 22. React is fast mainly because of this Parcel library.
 23. "dist" folder is like bin and obj that we get in .net apps i.e., it contains app's build.
 24. Run **npx parcel build index.html** command to generate production builds.
+25. At any moment, you can delete node_modules, dist, .parcel-cache folder and run "npm install" again to get them again.
+    So no need to send them to git.
+26. We can configure all the browser versions in which our app is supposed to work using "browserslist" configuration in package.json.
+    Read **"www.browserslist.dev"** for more info.
