@@ -2,9 +2,9 @@
 
 ## Introduction and Basic setup
 
-1. Normal Javascript
+1. Normal Javascript example
 2. Simple React JS example
-3. complex React js example
+3. Complex React js example
 4. Run **"npm init"** to add npm configuration file i.e., package.json
 5. Now install a bundling library as a dependency. Ex : Webpack, parcel etc., Here, we are adding parcel as the bundler.
    **"npm install -D parcel"**
@@ -17,3 +17,10 @@
 11. Added gitignore file to ignore "node_modules" folder to be checked in to git.
     Reason : packages.json and packages-lock.json will make sure to install all those node modules as and when required.
 12. Even if you delete "node_modules" folder, **"npm install"** command will regenerate it again.
+13. If we want to install a package - **use npm**
+    If we want to execute the package - **use npx**
+14. Now run command **npx parcel index.html** to start our project in "localhost:1234" server.
+15. We can remove react cdn links and install react,react-dom locally.
+    Run commands **npm install react**, **npm install react-dom**
+16. Now add **import React** and **import React-Dom** statements in js file, to use the react package by importing.
+17. Also add, **type="module"** for <script src="./App.js">
