@@ -17,13 +17,8 @@ Creating the above structure using react js
 */
 
 
-const parent = React.createElement("div",{id:"parent"},
-[
-    React.createElement("div",{id:"section1"}, [React.createElement("h1",{},"this is h1"),React.createElement("h2",{},"this is h2")]),
-    React.createElement("div",{id:"section2"}, [React.createElement("h1",{},"this is h1"),React.createElement("h2",{},"this is h2")])
-]);
+var heading = <h1>Hello World</h1>;
+console.log(heading);
 
-
-const root = ReactDOM.createRoot(document.getElementById("div2"));
-console.log(root);
-root.render(parent);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading);

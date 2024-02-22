@@ -39,4 +39,10 @@
 ## Core React
 
 1. To start React, add "parcel index.html" in the package.json -> scripts object and use **npm start** command
-2.
+2. JSX is not like writing html in js file but it has HTML like syntax in it.
+3. Babel - library that takes the jsx and transpiles into browser understandable JS - it is a js compiler.
+4. JSX => React.CreateElement => JS React Element => Html Element
+   Above is the way in which JSX elements are converted to html elements.
+5. visit https://babeljs.io/ for more info.
+6. Prettier, Bracket pair coloriser, Es lint, better comments - some of the important vs code extensions.
+7.
