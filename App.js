@@ -1,24 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-/*
-<div id="parent">
-    <div id="section1">
-        <h1>this is h1</h1>
-        <h2>this is h2</h2>
-    </div>
-    <div id="section2">
-        <h1>this is h1</h1>
-        <h2>this is h2</h2>
-    </div>
-</div>    
-
-Creating the above structure using react js
-*/
-
-
+// React element
 var heading = <h1>Hello World</h1>;
-console.log(heading);
+
+// React component
+const Title = () => {
+    return <h1>Hello World title</h1>
+}
+const Headingcomponent = () => {
+    return (<div>
+                <Title/>
+                <h2>Hello React JS component</h2>
+            </div>);
+}
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+//root.render(heading);
+root.render(<Headingcomponent/>);

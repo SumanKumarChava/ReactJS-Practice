@@ -45,4 +45,6 @@
    Above is the way in which JSX elements are converted to html elements.
 5. visit https://babeljs.io/ for more info.
 6. Prettier, Bracket pair coloriser, Es lint, better comments - some of the important vs code extensions.
-7.
+7. 2 types of react components - class based and functional based
+8. React functional compoenent - it is nothing but a function that returns a react element
+9. Component Composition - using one React component within another component
