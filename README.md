@@ -37,3 +37,6 @@
     Read **"www.browserslist.dev"** for more info.
 
 ## Core React
+
+1. To start React, add "parcel index.html" in the package.json -> scripts object and use **npm start** command
+2.
