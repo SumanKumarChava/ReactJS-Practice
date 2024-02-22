@@ -39,7 +39,7 @@
 ## Core React
 
 1. To start React, add "parcel index.html" in the package.json -> scripts object and use **npm start** command
-2. JSX is not like writing html in js file but it has HTML like syntax in it.
+2. JSX is not actually writing html in js file but it has HTML like syntax in it.
 3. Babel - library that takes the jsx and transpiles into browser understandable JS - it is a js compiler.
 4. JSX => React.CreateElement => JS React Element => Html Element
    Above is the way in which JSX elements are converted to html elements.
@@ -48,5 +48,5 @@
 7. 2 types of react components - class based and functional based
 8. React functional compoenent - it is nothing but a function that returns a react element
 9. Component Composition - using one React component within another component
-10. Cross site scripting attack - where an attacker can run some javscript within an user's browser through some malicious api and get his personal data. Read more about this. JSX avoids this attack by dfeault when we keep some js code with in curly braces. "{}"
+10. Cross site scripting attack - where an attacker can run some javscript within an user's browser through some malicious api and get his personal data. Read more about this. JSX avoids this attack by default when we keep some js code with in curly braces. "{}"
 11. React JS code is readable mainly because of "JSX"
