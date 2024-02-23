@@ -51,4 +51,12 @@
 10. Cross site scripting attack - where an attacker can run some javscript within an user's browser through some malicious api and get his personal data. Read more about this. JSX avoids this attack by default when we keep some js code with in curly braces. "{}"
 11. React JS code is readable mainly because of "JSX".
 12. **Always Design and plan the ux before starting to code.**
-13.
+13. If we want to send dynamic data to a component, we can pass it through **props**.
+    **React component consider props as an object that is passed as an argument to it.**
+14. **Conflict Driven UI** - case When a website is driven by conflicts. In this case, api are implemented in such a way that the UI will be changed based on the data. Example : Like showing or hiding the carousel, based on data comes or not from api etc.,
+
+    Example if a conflict : Mumabi may have offers to show in UI, but Hyderabad may not have any. In this case conflict comes and we cant design one ui for each city.
+
+15. Whenever we are using map() method, we have to define unique key for the inner react elements. (to avoid warnings in the web console.) If we dont do that, react will rerender all the items in the UI whenever a new item is added to the list. **So, it takes a big performance hit, if we dont give key.**
+
+16. **React dont recommend using index as keys, since it is an anti-pattern**. So, best practice is using any unique id that we get from api.
