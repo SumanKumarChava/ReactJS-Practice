@@ -1,6 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
+
+
+/**
+ *  Planning a sample app
+ *   Namaste Foodies app
+ *   1) Header
+ *      - Nav items
+ *      - logo
+ *
+ *   2) Body
+ *      - Search
+ *      - Restuarent container
+ *          - Restaurent cards
+ *   3) Footer
+ *      - copyrights
+ *      - links
+ *      - address
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
+
+
 // React element
 var heading = <h1>Hello World</h1>;
 

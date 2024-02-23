@@ -49,4 +49,6 @@
 8. React functional compoenent - it is nothing but a function that returns a react element
 9. Component Composition - using one React component within another component
 10. Cross site scripting attack - where an attacker can run some javscript within an user's browser through some malicious api and get his personal data. Read more about this. JSX avoids this attack by default when we keep some js code with in curly braces. "{}"
-11. React JS code is readable mainly because of "JSX"
+11. React JS code is readable mainly because of "JSX".
+12. **Always Design and plan the ux before starting to code.**
+13.
