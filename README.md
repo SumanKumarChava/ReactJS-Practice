@@ -41,8 +41,8 @@
 1. To start React, add "parcel index.html" in the package.json -> scripts object and use **npm start** command
 2. JSX is not actually writing html in js file but it has HTML like syntax in it.
 3. Babel - library that takes the jsx and transpiles into browser understandable JS - it is a js compiler.
-4. JSX => React.CreateElement => JS React Element => Html Element
-   Above is the way in which JSX elements are converted to html elements.
+4. JSX => React.CreateElement => JS React Element => Html Element. 
+   This is the way in which JSX elements are converted to html elements.
 5. visit https://babeljs.io/ for more info.
 6. Prettier, Bracket pair coloriser, Es lint, better comments - some of the important vs code extensions.
 7. 2 types of react components - class based and functional based
@@ -55,7 +55,7 @@
     **React component consider props as an object that is passed as an argument to it.**
 14. **Conflict Driven UI** - case When a website is driven by conflicts. In this case, api are implemented in such a way that the UI will be changed based on the data. Example : Like showing or hiding the carousel, based on data comes or not from api etc.,
 
-    Example if a conflict : Mumabi may have offers to show in UI, but Hyderabad may not have any. In this case conflict comes and we cant design one ui for each city.
+    Example of a conflict : Mumabi may have offers to show in UI, but Hyderabad may not have any. In this case conflict comes and we cant design one ui for each city.
 
 15. Whenever we are using map() method, we have to define unique key for the inner react elements. (to avoid warnings in the web console.) If we dont do that, react will rerender all the items in the UI whenever a new item is added to the list. **So, it takes a big performance hit, if we dont give key.**
 
