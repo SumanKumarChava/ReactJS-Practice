@@ -17,7 +17,7 @@
 11. Added gitignore file to ignore "node_modules" folder to be checked in to git.
     Reason : packages.json and packages-lock.json will make sure to install all those node modules as and when required.
 12. Even if you delete "node_modules" folder, **"npm install"** command will regenerate it again.
-13. If we want to install a package - **use npm**
+13. If we want to install a package - **use npm**.
     If we want to execute the package - **use npx**
 14. Now run command **npx parcel index.html** to start our project in "localhost:1234" server.
 15. We can remove react cdn links and install react,react-dom locally.
