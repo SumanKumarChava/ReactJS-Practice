@@ -41,7 +41,7 @@
 1. To start React, add "parcel index.html" in the package.json -> scripts object and use **npm start** command
 2. JSX is not actually writing html in js file but it is a JS file which can have HTML like syntax in it.
 3. Babel - library that takes the jsx and transpiles into browser understandable JS - it is a js compiler.
-4. JSX => React.CreateElement => JS React Element => Html Element. 
+4. JSX => React.CreateElement => JS React Element => Html Element.
    This is the way in which JSX elements are converted to html elements.
 5. visit https://babeljs.io/ for more info.
 6. Prettier, Bracket pair coloriser, Es lint, better comments - some of the important vs code extensions.
@@ -60,3 +60,21 @@
 15. Whenever we are using map() method, we have to define unique key for the inner react elements. (to avoid warnings in the web console.) If we dont do that, react will rerender all the items in the UI whenever a new item is added to the list. **So, it takes a big performance hit, if we dont give key.**
 
 16. **React dont recommend using index as keys, since it is an anti-pattern**. So, best practice is using any unique id that we get from api.
+17. **React component should not contain any hardcoded data (industry standard).** It can be url, list, data anything that is hardcoded. Good practice is to keept it in utils -> constants.js (or) utils -> mockdata.js.
+
+18. **Components names start with Capital letters.**
+
+19. **Its a good habit to name all constants in capital letters.**
+
+** Named Exports vs Default Exports ** - these are the 2 ways in which we can export a component
+
+20. We can use named exports to export multiple things from single file.
+    ex : export const NAME = "Suman";
+    export const CITY = "City1";
+
+21. We can use default exports to export single thing from single file .
+    example : from a component file we export single component.
+    ex : export default Header;
+
+22. **Named exports can be imported through curly braces . Ex : import {NAME} from './contants.js'**
+    Dafult exports can be imported normally. Ex : import Header from './Header.js'

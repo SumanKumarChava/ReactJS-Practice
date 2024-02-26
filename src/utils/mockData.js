@@ -1,59 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom'
-
-
-
-/**
- *  Planning a sample app
- *   Namaste Foodies app
- *   1) Header
- *      - Nav items
- *      - logo
- *
- *   2) Body
- *      - Search
- *      - Restuarent container
- *          - Restaurent cards
- *   3) Footer
- *      - copyrights
- *      - links
- *      - address
- */
-
-const Header = () => {
-    return (
-        <div className="header">
-            <div id="logo-container">
-                <img id="logo-img" src="https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/21/213/213794/2-o.jpg?1413906799" alt="app-logo"/>
-            </div>
-            <div id="nav-items-container">
-                <ul id="nav-items-list">
-                    <li>Home</li>
-                    <li>Contact us</li>
-                    <li>About Us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    );
-}
-
-const RestuarantCard = (restData) => {
-    console.log(restData);
-    const {name, cloudinaryImageId, cuisines, avgRatingString, costForTwo } = restData?.restData;
-    return (
-        <div className="res-item-card">
-            <img className="food-item-image" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId}
-             alt="food-item-image"/>
-            <h4>{name}</h4>
-            <h5>{cuisines.join(", ")}</h5>
-            <h5>{avgRatingString} stars</h5>
-            <h5>{costForTwo}</h5>
-        </div>
-    );
-}
-
-const resturantList = [
+export const resturantList = [
     {
       "info": {
         "id": "79547",
@@ -723,25 +668,3 @@ const resturantList = [
       "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     }
   ];
-
-const Body = () => {
-    return (
-        <div class="res-container">
-            {resturantList.map((resturant) => <RestuarantCard restData = {resturant.info} key={resturant.info.id}/>)}
-        </div>
-    )
-}
-
-const AppComponent = () => {
-    return(
-        <div className='app'>
-            <Header/>
-            <Body/>
-        </div>
-    )
-}
-
-
-// Must have these two lines at the end
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppComponent/>);
