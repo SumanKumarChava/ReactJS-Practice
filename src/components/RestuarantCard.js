@@ -1,7 +1,6 @@
 import {IMG_URL_PREFIX} from '../utils/constants';
 
 const RestuarantCard = (restData) => {
-    console.log(restData);
     const {name, cloudinaryImageId, cuisines, avgRatingString, costForTwo } = restData?.restData;
     return (
         <div className="res-item-card">

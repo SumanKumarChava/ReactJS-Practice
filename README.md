@@ -87,4 +87,13 @@
 26. whenever the state variable gets updated, react will re-render the component. React makes DOM operations superfast.
 27. React uses Reconciliation algorithm or React Fiber algorithm to perform dom operations quickly by using virtual dom. Read more at **https://github.com/acdlite/react-fiber-architecture**. **This is the core mechanism of how react works**
 
-28.
+28. Microservices architecture follows Single responsibility principle and has seperation of concerns.
+29. There are 2 ways we can load data onto screen.
+
+    a) Page loads -> Make api call and get data -> Then render it on UI.
+    b) Page loads -> Render whatever static content you have -> Make api call and get data -> rerender ui if data comes from api.
+    In react, we always use the second approach for better ux. (React's render cycles are very fast, so its ok to render twice.)
+
+    We can use **"useEffect()"** for this. Usereffect gets called after the component rendering completes.
+
+30. As part of demo, we are using swiggy api and we got CORS error in the process. **we can install "Allow CORS" extension** to bypass it.
