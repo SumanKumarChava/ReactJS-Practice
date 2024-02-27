@@ -63,7 +63,6 @@
 17. **React component should not contain any hardcoded data (industry standard).** It can be url, list, data anything that is hardcoded. Good practice is to keept it in utils -> constants.js (or) utils -> mockdata.js.
 
 18. **Components names start with Capital letters.**
-
 19. **Its a good habit to name all constants in capital letters.**
 
 ** Named Exports vs Default Exports ** - these are the 2 ways in which we can export a component
@@ -78,3 +77,13 @@
 
 22. **Named exports can be imported through curly braces . Ex : import {NAME} from './contants.js'**
     Dafult exports can be imported normally. Ex : import Header from './Header.js'
+23. React Hook is a normal JS function provided by react library.
+24. useState(), useEffect() are the mainly used react hooks most of the times.
+
+25. let names = []; // way to create a normal variable.
+
+    const [names, setName] = useState([]); // way to create a local state variable & setName() will update the names list
+
+26. whenever the state variable gets updated, react will re-render the component. React makes DOM operations superfast.
+27. React uses Reconciliation algorithm or React Fiber algorithm to perform dom operations quickly by using virtual dom. Read more at **https://github.com/acdlite/react-fiber-architecture**.
+28.
