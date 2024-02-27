@@ -1,6 +1,7 @@
 import RestuarantCard from "./RestuarantCard";
 import { useEffect, useState } from "react";
 import { SWIGGY_URL } from "../utils/constants";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
 
@@ -8,7 +9,7 @@ const Body = () => {
 
     useEffect (() => {
         FetchDataFromAPI();
-    });
+    }, []);
 
     const FetchDataFromAPI = async() => {
         var data = await fetch(SWIGGY_URL);
@@ -19,6 +20,10 @@ const Body = () => {
     const onFilterButtonClicked = () => {
         const filteredList = restList.filter(r => r.info.avgRating > 4.0);
         setRestList(filteredList);
+    }
+
+    if(restList.length === 0){
+        return <Shimmer/>
     }
 
     return (
