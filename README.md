@@ -85,5 +85,6 @@
     const [names, setName] = useState([]); // way to create a local state variable & setName() will update the names list
 
 26. whenever the state variable gets updated, react will re-render the component. React makes DOM operations superfast.
-27. React uses Reconciliation algorithm or React Fiber algorithm to perform dom operations quickly by using virtual dom. Read more at **https://github.com/acdlite/react-fiber-architecture**. ** This is the core mechanism of how react works. **
+27. React uses Reconciliation algorithm or React Fiber algorithm to perform dom operations quickly by using virtual dom. Read more at **https://github.com/acdlite/react-fiber-architecture**. **This is the core mechanism of how react works**
+
 28.
