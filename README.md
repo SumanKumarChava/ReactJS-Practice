@@ -98,3 +98,4 @@
 
 30. As part of demo, we are using swiggy api and we got CORS error in the process. **we can install "Allow CORS" extension** to bypass it.
 31. Showing **Shimmer UI** is preferred than showing loader in industrial standards. Refer for more info **https://reactjsexample.com/customizable-shimmer-effects-for-react/**
+32.

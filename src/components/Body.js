@@ -14,6 +14,8 @@ const Body = () => {
     const FetchDataFromAPI = async() => {
         var data = await fetch(SWIGGY_URL);
         var json = await data.json();
+
+        // Optional chaining
         setRestList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
 
@@ -22,11 +24,12 @@ const Body = () => {
         setRestList(filteredList);
     }
 
+    // conditional rendering
     if(restList.length === 0){
         return <Shimmer/>
     }
 
-    return (
+    return (restList.length === 0)? <Shimmer/>:(
         <div>
             <div className="btn-group">
                     <button className="filter-btn" onClick={onFilterButtonClicked}>Filter Top rated Restuarants</button>
