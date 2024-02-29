@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Header from './components/Header';
 import Body from './components/Body';
 import { ROOT_ID } from './utils/constants';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import ContactUs from './components/ContactUs';
 import About from './components/About';
 import Error from './components/Error';
@@ -12,7 +12,7 @@ const AppComponent = () => {
     return(
         <div className='app'>
             <Header/>
-            <Body/>
+            <Outlet/>
         </div>
     )
 }
@@ -21,17 +21,22 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <AppComponent/>,
-        errorElement: <Error/>
+        errorElement: <Error/>,
+        children:[
+            {
+                path: "/contactus",
+                element: <ContactUs/>
+            },
+            {
+                path: "/about",
+                element: <About/>
+            },   
+            {
+                path: "/",
+                element: <Body/>
+            },      
+        ]
     },
-    {
-        path: "/contactus",
-        element: <ContactUs/>
-    },
-    {
-        path: "/about",
-        element: <About/>
-    },
-
 ]);
 
 // Must have these two lines at the end
