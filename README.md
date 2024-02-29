@@ -100,3 +100,21 @@
 31. Showing **Shimmer UI** is preferred than showing loader in industrial standards. Refer for more info **https://reactjsexample.com/customizable-shimmer-effects-for-react/**
 
 32. **Whenever a state variable gets updated, react triggers a reconciliation cycle. Therefore entire component will be rerendered again.**
+
+**About UseEffect**
+
+33. useEffect() - gets called after every render of the component if we dont put dependency array. ex : useEffect(()=> {});
+    It gets called only for first render if you send an empty dependency array as second param. ex : useEffect(()=>{}, []);
+34. If you send one state variable in dependency array, then everytime that variable changes, the useEffect() method will be called. example : useEffect(()=>{}, [btnName]); - here whenever the btnName is changed, useEffect will be called.
+
+**About UseState**
+
+35. it is good practice to declare state variables at the start of the component.
+36. **Dont use useState() in if-else condition and for-loops**
+
+**Routing**
+
+37. **ReactRouter** library is used for routing. **https://reactrouter.com/en/main**
+38. npm i react-router-dom - to install it.
+39. Always implement routing configuration in "App.js".
+40.
