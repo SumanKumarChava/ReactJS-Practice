@@ -122,3 +122,5 @@
 
 42. we have two types of routing usually. a) Clientside b) Serverside.
 43. Single page apps use clientside routing. Our react app is the example.
+44. **Dynamic routing** - setting route dynamically. Example : Going to a restuarant details page when res card is clicked by user.
+45.
