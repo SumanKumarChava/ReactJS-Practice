@@ -2,6 +2,7 @@ import RestuarantCard from "./RestuarantCard";
 import { useEffect, useState } from "react";
 import { SWIGGY_URL } from "../utils/constants";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
 
@@ -47,7 +48,10 @@ const Body = () => {
                     <button className="filter-btn" onClick={onFilterButtonClicked}>Filter Top rated Restuarants</button>
             </div>
             <div className="res-container">
-                {filteredRestList.map((resturant) => <RestuarantCard restData = {resturant.info} key={resturant.info.id}/>)}
+                {filteredRestList.map((resturant) => 
+                    <Link key={resturant.info.id} to={"restaurantMenu/"+resturant.info.id}>
+                        <RestuarantCard restData = {resturant.info} />
+                    </Link>)}
             </div>
         </div>
         

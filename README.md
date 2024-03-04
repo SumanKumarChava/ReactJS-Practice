@@ -123,4 +123,8 @@
 42. we have two types of routing usually. a) Clientside b) Serverside.
 43. Single page apps use clientside routing. Our react app is the example.
 44. **Dynamic routing** - setting route dynamically. Example : Going to a restuarant details page when res card is clicked by user.
-45.
+45. Link is a wrapper over anchor tag. i.e., Link itself uses anchor tag behind the scenes.
+46. we can send parameters from one page to other using **"useParams()"** hook.
+47. Parameter can be sent from page 1 to page 2 with ":" as prefix. ex : "restuarentMenu/:resId" - > here resId is the parameter.
+48. **"useRouteError"** hook can be used to get the error details while routing and there by show it in a seperate Error page.
+49.
