@@ -118,7 +118,7 @@
 38. npm i react-router-dom - to install it.
 39. Always implement routing configuration in "App.js".
 40. **"Outlet" component** provided by react-router-dom is responsible for child routing with react
-41. In react, we dont use "<a> tag" since it reloads the page again. To avoid this, there is a "Link" component from react-router-dom.
+41. In react, we dont use "a tag" since it reloads the page again. To avoid this, there is a "Link" component from react-router-dom.
 
 42. we have two types of routing usually. a) Clientside b) Serverside.
 43. Single page apps use clientside routing. Our react app is the example.
