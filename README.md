@@ -127,4 +127,21 @@
 46. we can send parameters from one page to other using **"useParams()"** hook.
 47. Parameter can be sent from page 1 to page 2 with ":" as prefix. ex : "restuarentMenu/:resId" - > here resId is the parameter.
 48. **"useRouteError"** hook can be used to get the error details while routing and there by show it in a seperate Error page.
-49.
+49. A class based react component is a JS class that extends from "React.Component" and renders a piece of JSX.
+50. So function based component is **a function that returns a piece of JSX** and class based component is **a class that renders a piece of JSX**.
+51. The props sent to the component can only be captured in the constructor of a class component.
+
+    example :
+
+```
+    class UserClass extends React.Component{
+        constructor(props){
+            super(props);
+            console.log(props);
+        }
+    }
+```
+
+**Here super(props) is mandatory, otherwise props are not received.**
+
+52. Within class based component, **we can access the props only through "this.props"**. Example : this.props.name
