@@ -145,3 +145,27 @@
 **Here super(props) is mandatory, otherwise props are not received.**
 
 52. Within class based component, **we can access the props only through "this.props"**. Example : this.props.name
+53. Within class component, **the state variables can be defined only in constructor** and they can be accessed through **"this.state"**, example : this.state.count
+
+```
+    class UserClass extends React.Component{
+        constructor(props){
+            super(props);
+            this.state = {
+                count : 0
+            }
+        }
+    }
+```
+
+54. Also, the state variables cannot be updated directly like : this. state.count = 1; -> this is wrong. Instead, use as below :
+
+```
+    this.setState({
+        count = 1;
+    });
+```
+
+-> "this.setState()" method is available anywhere within a class based component.
+
+55. Note : If this.state object has 10 state variables and the this.setstate() method is called to update 2 variables, only those will be updated and the remaining will remain unchanged.
