@@ -162,7 +162,7 @@
 
 ```
     this.setState({
-        count = 1;
+        count : 1
     });
 ```
 
